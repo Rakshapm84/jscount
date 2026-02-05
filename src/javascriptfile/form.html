@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function demo()
+    {
+    let name1=document.getElementById("name1").value;
+    let pass1=document.getElementById("pass1").value;
+    if(name1==pass1)
+    {
+     document.write("<h4>name and password or match</h4>")
+    }
+    else
+    {
+    document.write("<h4>name and password are not matching</h4>")
+    }
+    }
+</script>
+<form>
+    <h2> Login</h2>
+    <label>Name</label>
+    <input id="name1" type="text" placeholder="Enter the name"><br>
+    <label>Password</label>
+    <input id="pass1" type="password" placeholder="Enter the name"><br>
+    <button id="sub" onclick="demo() ">Submit</button>
+</form>
+</body>
+</html>
